@@ -95,8 +95,8 @@ const EnterFin = () => {
               </a>
             </div>
         )}
-        <Button buttonType={'gosuslugi'} to={`under-develop`}></Button>
-        <Button buttonType={'sber'} to={`under-develop`}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Войти по Сбербанк ID</Button>
+        <Button buttonType={'gosuslugi'} isUnderDev={true} ></Button>
+        <Button buttonType={'sber'} isUnderDev={true} >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Войти по Сбербанк ID</Button>
         <br/><br/>
         <div className={css.enterBtn}>
           <Button to='/login'>Войти</Button>

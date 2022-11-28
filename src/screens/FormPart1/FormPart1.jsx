@@ -68,12 +68,12 @@ const FormPart1 = () => {
 
   const init = async () => {
     sessionStorage.removeItem('emailSuccess');
-    // const dataInst = await request.get('persident/getinstitutes');
-    const dataInst = await request.getInst(InstCode);
+    const dataInst = await request.get('persident/getinstitutes');
+    //const dataInst = await request.getInst(InstCode);
     const dataFolk = await request.get('persident/getfolkroles');
 
     if (InstCode === 1) {
-      const filtreddataInst = dataInst.filter((item) => item.kod === '1');
+      const filtreddataInst = dataInst.filter((item) => item.kod === '6');
       setinstitutes(filtreddataInst);
     }
 
